@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: white;
   width: 100%;
   position: relative;
 
@@ -20,12 +21,12 @@
 }
 
 .sectionContent {
-  padding: 32px 0;
+  padding: 10px 0;
   position: relative;
   word-break: break-word;
 
   @media (--viewportMedium) {
-    padding: 64px 0;
+    /* padding: 10px 0; */
   }
 }
 

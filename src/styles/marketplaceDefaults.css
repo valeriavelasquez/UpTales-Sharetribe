@@ -63,6 +63,10 @@
   --colorPrimaryButtonDark: var(--colorSuccessDark);
   --colorPrimaryButtonLight: var(--colorSuccessLight);
 
+  /*VALERIA'S CUSTOM COLORING*/
+
+  --colorCategoryButton: #ff5454;
+
   /** 
    * The fill color used by <SecondaryButton>
    */
@@ -1052,8 +1056,13 @@ textarea {
 
   /* Button colors */
   /* Primary button uses success color */
-  background-color: var(--colorPrimaryButton);
+  background-color: var(--colorCategoryButton);
   color: var(--colorWhite);
+
+  /*ZOOM*/
+
+  transition: all var (--transitionStyleButton);
+  transform: scale(1);
 
   @media (--viewportMedium) {
     padding: 20px 0 20px 0;
@@ -1063,8 +1072,9 @@ textarea {
 .buttonPrimary:hover {
   outline: none;
   box-shadow: var(--boxShadowButton);
-  background-color: var(--colorPrimaryButtonDark);
+  background-color: #1e1e1e;
   color: var(--colorWhite);
+  transform: scale(1.10);
 }
 .buttonPrimary:hover {
   text-decoration: none;

@@ -5,6 +5,8 @@
   align-items: center;
   scroll-behavior: smooth;
   padding: 64px 0 0 0;
+  background-color: white;
+
 
   &:hover .carouselArrows {
     opacity: 1;
@@ -71,6 +73,8 @@
   flex-wrap: nowrap;
   width: var(--carouselWidth);
   padding-bottom: 24px;
+  padding-top: 24px;
+
 
   overflow-x: auto;
   -ms-overflow-style: none;
@@ -97,7 +101,6 @@
 
   margin-right: 16px;
   scroll-snap-align: center;
-
   transform: translateX(32px);
 
   &:last-of-type {
@@ -124,6 +127,18 @@
       ); /* 32px (padding-right above) */
     }
   }
+}
+
+
+.block {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center center;
+  transform: translateX(32px); /* keep original X offset */
+}
+
+.block:hover {
+  transform: translateX(32px) translateY(-8px) scale(1.06);
+  border-radius: 20px;
 }
 
 .oneColumn .block {
